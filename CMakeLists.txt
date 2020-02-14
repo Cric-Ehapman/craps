@@ -3,4 +3,4 @@ project(craps)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(craps main.cpp)
+add_executable(craps main.cpp die.cpp die.h)
