@@ -35,4 +35,7 @@ public:
     std::string getMaterial();
 
 };
+
+bool checkWin(int totalRoll);
+bool checkWin2(int totalRoll, int totalRoll2);
 #endif //CRAPS_DIE_H

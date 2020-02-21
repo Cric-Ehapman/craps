@@ -4,12 +4,13 @@
 
 #include "die.h"
 #include <random>
+#include <ctime>
 
-Die (int startingNumberOfSides = 6, int startingIncrements=1, int firstStartingVal=1, std::string startingColor = "white", bool startingIsSymbol=false, std::string startingMaterial="Bone", int startingValue=1);
-
+Die::Die (int startingNumberOfSides, int startingIncrements, int firstStartingVal, std::string startingColor, bool startingIsSymbol, std::string startingMaterial, int startingValue) {
+}
 
 int Die::roll(){
-    value = 2;
+    return rand() % 6 + 1;
 }
 
 void Die::setNumberOfSides(int newNumberOfSides){
@@ -55,4 +56,21 @@ void Die::setMaterial(std::string newMaterial){
 }
 std::string Die::getMaterial(){
     return material;
+}
+
+bool checkWin(int totalRoll)
+{
+    if (totalRoll == 7 || totalRoll == 11)
+    {
+        return true;
+    }
+    else return false;
+}
+
+bool checkWin2(int totalRoll, int totalRoll2)
+{
+    if (totalRoll == totalRoll2)
+        return true;
+    else
+        return false;
 }
