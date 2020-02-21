@@ -4,7 +4,6 @@
 
 #include "die.h"
 #include <random>
-#include <ctime>
 
 Die::Die (int startingNumberOfSides, int startingIncrements, int firstStartingVal, std::string startingColor, bool startingIsSymbol, std::string startingMaterial, int startingValue) {
 }
